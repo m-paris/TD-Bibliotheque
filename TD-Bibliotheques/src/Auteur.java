@@ -10,9 +10,10 @@
  */
 public class Auteur {
     
-    private String nom,prenom,anneeNaissance,AnneeDeces;
+    private String nom,prenom;
+    private int anneeNaissance,AnneeDeces;
 
-    public Auteur(String nom, String prenom, String anneeNaissance, String AnneeDeces) {
+    public Auteur(String nom, String prenom, int anneeNaissance, int AnneeDeces) {
         this.nom = nom;
         this.prenom = prenom;
         this.anneeNaissance = anneeNaissance;
@@ -35,21 +36,7 @@ public class Auteur {
         this.prenom = prenom;
     }
 
-    public String getAnneeNaissance() {
-        return anneeNaissance;
-    }
-
-    public void setAnneeNaissance(String anneeNaissance) {
-        this.anneeNaissance = anneeNaissance;
-    }
-
-    public String getAnneeDeces() {
-        return AnneeDeces;
-    }
-
-    public void setAnneeDeces(String AnneeDeces) {
-        this.AnneeDeces = AnneeDeces;
-    }
+   
 
     @Override
     public String toString() {

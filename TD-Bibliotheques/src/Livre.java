@@ -10,9 +10,10 @@
  */
 public class Livre {
     
-    private String titre, genre, anneeSortie, auteur;
+    private String titre, genre, auteur;
+    private int anneeSortie;
 
-    public Livre(String titre, String genre, String anneeSortie, String auteur) {
+    public Livre(String titre, String genre, int anneeSortie, String auteur) {
         this.titre = titre;
         this.genre = genre;
         this.anneeSortie = anneeSortie;
@@ -35,13 +36,15 @@ public class Livre {
         this.genre = genre;
     }
 
-    public String getAnneeSortie() {
+    public int getAnneeSortie() {
         return anneeSortie;
     }
 
-    public void setAnneeSortie(String anneeSortie) {
+    public void setAnneeSortie(int anneeSortie) {
         this.anneeSortie = anneeSortie;
     }
+
+    
 
     public String getAuteur() {
         return auteur;
